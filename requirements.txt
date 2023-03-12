@@ -1,0 +1,4 @@
+flask
+flask-restful
+numpy
+opencv-python ==4.5.2.52

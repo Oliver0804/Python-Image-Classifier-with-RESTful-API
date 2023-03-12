@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Detection with YOLOv3-Tiny</title>
+  </head>
+  <body>
+    <h1>Object Detection with YOLOv3-Tiny</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Upload">
+    </form>
+    {% if result %}
+    <h2>Results:</h2>
+    <ul>
+      {% for item in result %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
